@@ -59,22 +59,26 @@ $result = mysqli_query($conn,$sql);
 //4. show result
 while ($row = $result->fetch_assoc()){
     ?>
-    <div class="cc">
-    <div class="row">
-    
-        <div class="column">
-          <div class="card">
-            <h3><?php echo $row["name"]; ?></h3>
-            <img src="<?php echo $row["image"]; ?>" class="imgFood">
-            <p><?php echo $row["name"]; ?></p>
-            <button class="button">
-                Add to Cart
-            </button>
-          </div>
+        <div class="cc">
+            <div class="row">
+
+                <div class="column">
+                    <div class="card">
+                        <h3><?php echo $row["name"]; ?></h3>
+                        <img src="<?php echo $row["image"]; ?>" class="imgFood">
+                        <p><?php echo $row["name"]; ?></p>
+
+                        <form action="addToCart.php" method="post">
+                            <input name="productID" value="<?php echo $row["id"]; ?>" type="hidden">
+                            <input name="qty" type="number" placeholder="QTY" min="0">
+                            <input type="submit" value="Add to cart">
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
-        
-       </div>
-    </div>
     </section>
     <?php
 }
