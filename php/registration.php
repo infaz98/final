@@ -11,12 +11,7 @@
 <?php
 require('db.php');
 
-$server = "klbcedmmqp7w17ik.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-$dbusername = "t8jnow42fmp1smpt";
-$dbpassword = "fdavedw769oxw5pd";
-$dbname = "k2nfay1osz1i59kc";
-
-$con = new mysqli($server, $dbusername, $dbpassword, $dbname);
+$con = mysqli_connect("qbhol6k6vexd5qjs.cbetxkdyhwsb.us-east-1.rds.amazonaws.com","x7gfa04m8j6bbzb4","bkmq78c2l2u5k2l7","x79gx4shz3s1ep7o");
 
 // If form submitted, insert values into the database.
 if (isset($_REQUEST['username'])){
