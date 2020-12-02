@@ -18,7 +18,7 @@
             <div class="title text-center">
                 <h1>About Us</h1>
                 <h3>PetRuff Online Pet Food Store</h3>
-                <h4><a href="https://petruff.herokuapp.com/html/about.php">pettruff.com</a></h4>
+                <h4><a href="https://petruff.herokuapp.com">pettruff.com</a></h4>
                 <hr />
             </div>
 
