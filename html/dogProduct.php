@@ -66,7 +66,7 @@ while ($row = $result->fetch_assoc()){
                     <div class="card">
                         <h3><?php echo $row["name"]; ?></h3>
                         <img src="<?php echo $row["image"]; ?>" class="imgFood">
-                        <p><?php echo $row["name"]; ?></p>
+                        <p><?php echo $row["descriptions"]; ?></p>
 
                         <form action="addToCart.php" method="post">
                             <input name="productID" value="<?php echo $row["id"]; ?>" type="hidden">
