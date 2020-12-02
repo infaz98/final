@@ -32,13 +32,6 @@ nav a:hover {
     color: #ffffff;
 }
 
-header {
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
-    transform-style: preserve-3d;
-}
-
  body {
     width: 100%;
     height: 100%;
