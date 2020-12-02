@@ -16,7 +16,7 @@ $conn = createDatabaseConnection();
 $sql = "select * from orders where userID = $userID";
 
 //3 run the first query
-$result = mysqli_query($conn, $sql);
+$result = mysqli_query($conn, $sql) or die("error : " . mysqli_error($conn));
 
 //4 show the first query
 while ($row = $result->fetch_assoc()){
