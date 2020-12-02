@@ -5,7 +5,6 @@ $qty = $_POST["qty"];
 //1. start a session
 @session_start();
 //2. get or set session variable
-// if I don't have an ordered products list in my session, I will create one
 if (isset($_SESSION["orderedProductIDs"])){
     //if something has been in our sopping cart
     $orderedProductIDs = $_SESSION["orderedProductIDs"];
@@ -32,3 +31,7 @@ $_SESSION["orderedProductQtys"] = $orderedProductQtys;
 
 //go back to previous page
 header('Location: ' . $_SERVER['HTTP_REFERER']);
+
+foreach ($orderedProductIDs as $order)  {
+    echo order ."<br />";
+}
