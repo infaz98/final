@@ -1,5 +1,5 @@
  nav {
-    display: flex;
+    display: compact;
     flex-wrap: wrap;
  }
  nav a {
