@@ -1,23 +1,22 @@
- nav {
-    display: compact;
+nav {
+    display: flex;
     flex-wrap: wrap;
- }
- nav a {
+}
+nav a {
     text-decoration: none;
     display: block;
     padding: 15px 25px;
     text-align: center;
     background-color: rgb(189, 185, 185);
-    color: #2b2a2a;
+    color: #464141;
     margin: 0;
     font-family: sans-serif;
     width: 25%;
- }
- nav a:hover {
-    background-color: #969696;
-    color: #dbcaca;
- }
-
+}
+nav a:hover {
+    background-color: #777777;
+    color: #ffffff;
+}
 
  html {
     width: 100%;
